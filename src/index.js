@@ -1,35 +1,59 @@
 import './style.css';
 import createHome from './home.js';
-// import HeroImage from './marcel-heil-unsplash.jpg';
+import createContact from './contact.js';
+import createMenu from './menu.js';
 
 
+// UI pointers
 
-  // UI pointers
+const homeLinkUI = document.querySelector('#home-link');
+const menuLinkUI = document.querySelector('#menu-link');
+const contactLinkUI = document.querySelector('#contact-link');
+const contentUI = document.querySelector('#content');
 
-  const homeLinkUI = document.querySelector('#home-link');
-  const menuLinkUI = document.querySelector('#menu-link');
-  const contactLinkUI = document.querySelector('#contact-link');
-  const contentUI = document.querySelector('#content');
+// Event handlers
 
-  // Event handlers
-  function loadHome() {
-    
-    clearContent();
+function loadHome() {
+  
+  clearContent();
 
-    contentUI.appendChild(createHome());
+  contentUI.appendChild(createHome());
 
-  };
+};
 
-  function clearContent() {
+function loadContact() {
+  
+  clearContent();
 
-    contentUI.innerHTML = null;
+  contentUI.appendChild(createContact());
 
-  }
+  // let buttonUI = contentUI.querySelector('#send-button');
+  // buttonUI.addEventListener('click', (e) => {
+  //   e.preventDefault();
+  // });
 
 
-  // Event listeners
-  document.addEventListener('DOMContentLoaded', loadHome);
-  homeLinkUI.addEventListener('click', loadHome);
-  // menuLinkUI.addEventListener('click', loadMenu);
-  // contactLinkUI.addEventListener('click', loadContact);
+};
+
+function loadMenu() {
+  
+  clearContent();
+
+  contentUI.appendChild(createMenu());
+
+};
+
+// Other functions
+
+function clearContent() {
+
+  contentUI.innerHTML = null;
+
+}
+
+// Event listeners
+document.addEventListener('DOMContentLoaded', loadHome);
+homeLinkUI.addEventListener('click', loadHome);
+menuLinkUI.addEventListener('click', loadMenu);
+contactLinkUI.addEventListener('click', loadContact);
 

@@ -5,7 +5,7 @@ function createHome() {
   mainUI.innerHTML = `
   <section id="hero">
     <h1 id="title">Foods Per Second</h1>
-    <h2>Welcome to the best fast-food in the city</h2>
+    <h2 id="greeting">Welcome to the best fast-food in the city</h2>
   </section>
   <section id="features" class="narrow">
     <div class="icon">

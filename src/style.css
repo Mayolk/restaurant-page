@@ -20,6 +20,11 @@ svg {
   margin: 0 auto;
 }
 
+.lead-heading {
+  font-size: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+
 /* Header */
 
 #header {
@@ -68,7 +73,7 @@ svg {
     #1a3c1bc4,
     #1a3c1bc4
     ),
-    black url(./marcel-heil-unsplash.jpg) center center;
+    black url(./images/marcel-heil-unsplash.jpg) center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,10 +87,15 @@ svg {
   text-align: center;
 }
 
+#greeting {
+  padding: 0 3rem;
+  text-align: center;
+}
+
 /* Features */
 
 #features {
-  padding-top: 3rem;
+  margin-top: 3rem;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 4fr;
@@ -96,6 +106,78 @@ svg {
   height: 6rem;
   color: #d7483d;
   padding: 1rem;
+}
+
+/* Menu */
+
+#menu {
+  margin-top: 6rem;
+  padding: 0 1rem;
+}
+
+.menu-item {
+  display: flex;
+  gap: 3rem;
+  padding: 1rem;
+  border-radius: .325rem;
+  border: 1px hsl(6, 18%, 66%) solid;
+  background-color: #dbdbdb;
+  margin-bottom: 2rem;
+}
+
+.menu-item-image {
+  height: 15rem;
+  width: 15rem;
+  border-radius: .25rem;
+}
+
+.menu-item-name {
+  margin-bottom: 1rem;
+  color: hsl(4, 66%, 34%);
+}
+
+.list {
+  list-style: none;
+}
+
+#hamburger-img { background: url(./images/hamburger.jpg) center / cover; }
+#mini-pizza-img { background: url(./images/mini-pizza.jpg) center / cover; }
+#calzone-img { background: url(./images/calzone.jpg) center / cover; }
+#toast-sandwich-img { background: url(./images/toast-sandwich.jpg) center / cover; }
+#burrito-img { background: url(./images/burrito.jpg) center / cover; }
+
+/* Contact */
+
+#contact {
+  margin-top: 6rem;
+  padding: 0 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  margin-bottom: 1rem;
+}
+
+#email {
+  margin-top: .5rem;
+  width: 50%;
+  min-width: 400px;
+  padding: .5rem 1rem;
+}
+
+#textarea {
+  margin-top: .5rem;
+  margin-right: 2rem;
+  min-width: 400px;
+  padding: .5rem 1rem;
+  resize: vertical;
+}
+
+#send-button {
+  padding: .5rem 1.5rem;
+  cursor: pointer;
 }
 
 /* Footer */
