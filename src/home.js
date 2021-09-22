@@ -14,8 +14,8 @@ function createHome() {
       </svg>
     </div>
     <div class="feature">
-      <h2>Fresh product</h2>
-      <p>Tomatoes are picked every day in accordance to the daily demand to ensure that the delivered product is always fresh.</p>
+      <h2>Super tasty</h2>
+      <p>Our recipes are top secret, but one thing is well-known: our food tastes great.</p>
     </div>
     <div class="icon">
       <svg fill="currentColor" viewBox="0 0 16 16" id="bug-icon" xmlns="http://www.w3.org/2000/svg">
@@ -23,8 +23,8 @@ function createHome() {
       </svg>
     </div>
     <div class="feature">
-      <h2>Organic</h2>
-      <p>Our farm uses no pesticides and only natural fertilizer.</p>
+      <h2>Organic and Fresh</h2>
+      <p>Ingreadients used in our food are always fresh, and most of our ingreadients are organic.</p>
     </div>
     <div class="icon">
       <svg fill="currentColor" viewBox="0 0 16 16" id="truck-icon" xmlns="http://www.w3.org/2000/svg">
@@ -33,7 +33,7 @@ function createHome() {
     </div>
     <div class="feature">
       <h2>Punctual delivery</h2>
-      <p>Our delivery team follows a strict schedule. Tomatoes are delivered multiple times a day to accomodate customers.</p>
+      <p>We deliver our food very fast, with no reagard to human life.</p>
     </div>
   </section>
   `;
